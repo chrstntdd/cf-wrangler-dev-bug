@@ -1,0 +1,10 @@
+name = "cf-wrangler-bug"
+main = "./dist-ssr/cf-worker.js"
+compatibility_date = "2022-05-21"
+
+[build]
+command = "pnpm build-client && pnpm build-worker"
+
+[site]
+bucket = './dist'
+
